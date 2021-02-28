@@ -14,13 +14,13 @@
       </li>
    
      
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <form action="/search" class="form-inline my-2 my-lg-0">
+      <input name="query" class="form-control mr-sm-2 search-details" type="text" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
   </div>
 
-  <ul class="nav navbar-nav navbar-right">
+  <ul class="nav navbar-nav ">
       <li class="nav-item">
         <a class="nav-link" href="#">Cart(0)</a>
       </li>
