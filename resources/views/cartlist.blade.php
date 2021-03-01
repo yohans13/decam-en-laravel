@@ -8,6 +8,7 @@
   <div class="tranding-wrapper">
  
      <h2>Cart Items</h2>
+     <a class="btn btn-success" href="ordernow">Order Now</a></br</br>
       @foreach($products as $item)
         <div class="row search-item cart-list-divider">
 
@@ -31,7 +32,7 @@
               </div>
         @endforeach
       </div>
-     
+      <a class="btn btn-success" href="ordernow">Order Now</a></br</br>
   </div>
 
 </div>
