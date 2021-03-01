@@ -32,7 +32,7 @@ if(Session::has('user')){
 
   <ul class="nav navbar-nav ">
       <li class="nav-item">
-        <a class="nav-link" href="#">Cart({{$total}})</a>
+        <a class="nav-link" href="/cartList">Cart({{$total}})</a>
        
         @if(Session::has('user'))
         <li class="nav-item dropdown">
