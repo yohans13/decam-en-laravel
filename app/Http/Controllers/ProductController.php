@@ -77,6 +77,25 @@ function cartList()
 
 }
 
+
+function buyNow(Request $req)
+
+{
+
+  $userId=Session::get('user')['id'];
+  $total=$products::
+  where('products.id',$req->pp2)
+  ->select('products.price')
+  ->get();
+
+  return view('$total',['total'=>$total]);
+
+
+ 
+
+
+}
+
 function removeCart($id)
 {
 
@@ -126,6 +145,20 @@ function orderPlace(Request $req)
     }
       $req->input();
       return redirect('/');
+
+}
+
+function myOrders()
+{
+
+  $userId=Session::get('user')['id'];
+  $orders= DB::table('orders')
+  ->join('products','orders.product_id','=','products.id')
+  ->where('orders.user_id',$userId)
+  ->get();
+
+  return view('myorders',['orders'=>$orders]);
+
 
 }
 

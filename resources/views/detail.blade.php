@@ -11,7 +11,7 @@
   <div class="col-sm-6">
     <a href="/" >Go Back</a>
     <h2>{{$product['name']}}</h2>
-    <h2>Price : {{$product['price']}}</h2>
+    <h2 name="pp2">Price : {{$product['price']}}</h2>
     <h2>Details :  {{$product['description']}}</h2>
     <h2>Cetegory : {{$product['Cetegory']}}</h2>
     <br><br>
@@ -19,10 +19,12 @@
     @csrf
         <input type="hidden" name="product_id" value={{$product['id']}}>
         <button class="btn btn-primary">Add to Cart</button>
-    </form>
+        </form>
     <br><br>
-    <button class="btn btn-success">Buy Now</button>
+    
+    <a href="/" class="btn btn-success" >Buy Now</a>
     <br><br>
+    
   </div>
 </div>
 </div>
